@@ -16,7 +16,7 @@ spec:
                 app: ui
         spec:
             containers:
-                - image: docker.io/csantanapr/app-ui
+                - image: $(inputs.resources.image.url)
                   imagePullPolicy: Always
                   name: ui
                   ports:
